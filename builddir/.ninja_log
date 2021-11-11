@@ -8,3 +8,11 @@
 239	243	1636548258	abstract_factory/source/libsource.a	1c5165fa7f789645
 4	261	1636548258	abstract_factory/d20d345@@example_task@exe/main.cpp.o	f4a9fa3cc3d2880e
 261	311	1636548258	abstract_factory/example_task	53bc4cf2ac4892b1
+0	296	1636625945	build.ninja	cfda37557c48f1f2
+1	192	1636625945	abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o	8b5cab421301cf7b
+0	194	1636625945	abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o	c4299b63be0a06e2
+0	194	1636625945	abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o	2803d3e5ba1cc3f1
+1	207	1636625945	abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o	193b135bf96039cb
+1	225	1636625945	abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o	61646bc99a1dfb64
+1	229	1636625945	abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o	b4a57c43241d0f25
+229	293	1636625945	abstract_factory/example_task	199f04c180b9f375

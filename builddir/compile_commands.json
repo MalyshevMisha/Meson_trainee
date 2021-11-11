@@ -1,37 +1,37 @@
 [
   {
     "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
-    "command": "c++ -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory1.cpp.o' -MF 'abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory1.cpp.o.d' -o 'abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory1.cpp.o' -c ../abstract_factory/source/ConcreteFactory1.cpp",
+    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/main.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/main.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/main.cpp.o' -c ../abstract_factory/main.cpp",
+    "file": "../abstract_factory/main.cpp"
+  },
+  {
+    "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
+    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o' -c ../abstract_factory/source/ConcreteFactory1.cpp",
     "file": "../abstract_factory/source/ConcreteFactory1.cpp"
   },
   {
     "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
-    "command": "c++ -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory2.cpp.o' -MF 'abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory2.cpp.o.d' -o 'abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory2.cpp.o' -c ../abstract_factory/source/ConcreteFactory2.cpp",
+    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o' -c ../abstract_factory/source/ConcreteFactory2.cpp",
     "file": "../abstract_factory/source/ConcreteFactory2.cpp"
   },
   {
     "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
-    "command": "c++ -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA1.cpp.o' -MF 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA1.cpp.o.d' -o 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA1.cpp.o' -c ../abstract_factory/source/ConcreteProductA1.cpp",
+    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o' -c ../abstract_factory/source/ConcreteProductA1.cpp",
     "file": "../abstract_factory/source/ConcreteProductA1.cpp"
   },
   {
     "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
-    "command": "c++ -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA2.cpp.o' -MF 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA2.cpp.o.d' -o 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA2.cpp.o' -c ../abstract_factory/source/ConcreteProductA2.cpp",
+    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o' -c ../abstract_factory/source/ConcreteProductA2.cpp",
     "file": "../abstract_factory/source/ConcreteProductA2.cpp"
   },
   {
     "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
-    "command": "c++ -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB1.cpp.o' -MF 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB1.cpp.o.d' -o 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB1.cpp.o' -c ../abstract_factory/source/ConcreteProductB1.cpp",
+    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o' -c ../abstract_factory/source/ConcreteProductB1.cpp",
     "file": "../abstract_factory/source/ConcreteProductB1.cpp"
   },
   {
     "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
-    "command": "c++ -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB2.cpp.o' -MF 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB2.cpp.o.d' -o 'abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB2.cpp.o' -c ../abstract_factory/source/ConcreteProductB2.cpp",
+    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o' -c ../abstract_factory/source/ConcreteProductB2.cpp",
     "file": "../abstract_factory/source/ConcreteProductB2.cpp"
-  },
-  {
-    "directory": "/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir",
-    "command": "c++ -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'abstract_factory/d20d345@@example_task@exe/main.cpp.o' -MF 'abstract_factory/d20d345@@example_task@exe/main.cpp.o.d' -o 'abstract_factory/d20d345@@example_task@exe/main.cpp.o' -c ../abstract_factory/main.cpp",
-    "file": "../abstract_factory/main.cpp"
   }
 ]

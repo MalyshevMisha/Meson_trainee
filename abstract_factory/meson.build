@@ -5,4 +5,5 @@ inc = include_directories('include')
 
 subdir('source')
 
-executable('example_task', main_source, include_directories : inc, link_with : source_lib)
+#executable('example_task', main_source, include_directories : inc, link_with : source_lib)
+executable('example_task', sources : project_sources, include_directories : inc)

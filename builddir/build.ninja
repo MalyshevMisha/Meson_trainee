@@ -14,10 +14,6 @@ rule cpp_COMPILER
 
 # Rules for linking.
 
-rule STATIC_LINKER
- command = rm -f $out && gcc-ar $LINK_ARGS $out $in
- description = Linking static target $out
-
 rule cpp_LINKER
  command = c++ $ARGS -o $out $in $LINK_ARGS
  description = Linking target $out
@@ -40,39 +36,36 @@ build PHONY: phony
 
 # Build rules for targets
 
-build abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory1.cpp
- DEPFILE = abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory1.cpp.o.d
- ARGS = -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
-
-build abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory2.cpp
- DEPFILE = abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory2.cpp.o.d
- ARGS = -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
-
-build abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA1.cpp
- DEPFILE = abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA1.cpp.o.d
- ARGS = -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
-
-build abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA2.cpp
- DEPFILE = abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA2.cpp.o.d
- ARGS = -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
-
-build abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB1.cpp
- DEPFILE = abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB1.cpp.o.d
- ARGS = -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
-
-build abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB2.cpp
- DEPFILE = abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB2.cpp.o.d
- ARGS = -Iabstract_factory/source/cb44ed8@@source@sta -Iabstract_factory/source -I../abstract_factory/source -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
-
-build abstract_factory/source/libsource.a: STATIC_LINKER abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory1.cpp.o abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory2.cpp.o abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA1.cpp.o abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA2.cpp.o abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB1.cpp.o abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB2.cpp.o
- LINK_ARGS = csrD
-
 build abstract_factory/d20d345@@example_task@exe/main.cpp.o: cpp_COMPILER ../abstract_factory/main.cpp
  DEPFILE = abstract_factory/d20d345@@example_task@exe/main.cpp.o.d
  ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
 
-build abstract_factory/example_task: cpp_LINKER abstract_factory/d20d345@@example_task@exe/main.cpp.o | abstract_factory/source/libsource.a
- LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined -Wl,--start-group abstract_factory/source/libsource.a -Wl,--end-group '-Wl,-rpath,$$ORIGIN/source' '-Wl,-rpath-link,/home/misha/work/tietoevry/trainee/meson'"'"'s_task/1/proj/builddir/abstract_factory/source'
+build abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory1.cpp
+ DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory2.cpp
+ DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA1.cpp
+ DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA2.cpp
+ DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB1.cpp
+ DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB2.cpp
+ DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build abstract_factory/example_task: cpp_LINKER abstract_factory/d20d345@@example_task@exe/main.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
 
 # Test rules
 
@@ -126,7 +119,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony abstract_factory/source/libsource.a abstract_factory/example_task
+build all: phony abstract_factory/example_task
 
 build clean: phony meson-clean
 
