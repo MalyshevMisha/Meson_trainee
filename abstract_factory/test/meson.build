@@ -1,0 +1,1 @@
+test_sources = files('ConcreteProductA1Test.cpp')

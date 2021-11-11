@@ -36,6 +36,13 @@ build PHONY: phony
 
 # Build rules for targets
 
+build abstract_factory/d20d345@@my_test@exe/test_ConcreteProductA1Test.cpp.o: cpp_COMPILER ../abstract_factory/test/ConcreteProductA1Test.cpp
+ DEPFILE = abstract_factory/d20d345@@my_test@exe/test_ConcreteProductA1Test.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@my_test@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build abstract_factory/my_test: cpp_LINKER abstract_factory/d20d345@@my_test@exe/test_ConcreteProductA1Test.cpp.o
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined -Wl,--start-group -lgtest -Wl,--end-group
+
 build abstract_factory/d20d345@@example_task@exe/main.cpp.o: cpp_COMPILER ../abstract_factory/main.cpp
  DEPFILE = abstract_factory/d20d345@@example_task@exe/main.cpp.o.d
  ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
@@ -119,7 +126,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony abstract_factory/example_task
+build all: phony abstract_factory/my_test abstract_factory/example_task
 
 build clean: phony meson-clean
 
@@ -127,13 +134,13 @@ build meson-clean: CUSTOM_COMMAND PHONY
  COMMAND = /usr/bin/ninja -t clean
  description = Cleaning
 
-build build.ninja: REGENERATE_BUILD ../meson.build ../abstract_factory/meson.build ../abstract_factory/source/meson.build meson-private/coredata.dat
+build build.ninja: REGENERATE_BUILD ../meson.build ../abstract_factory/meson.build ../abstract_factory/source/meson.build ../abstract_factory/test/meson.build meson-private/coredata.dat
  pool = console
 
 build reconfigure: REGENERATE_BUILD PHONY
  pool = console
 
-build ../meson.build ../abstract_factory/meson.build ../abstract_factory/source/meson.build meson-private/coredata.dat: phony 
+build ../meson.build ../abstract_factory/meson.build ../abstract_factory/source/meson.build ../abstract_factory/test/meson.build meson-private/coredata.dat: phony 
 
 default all
 

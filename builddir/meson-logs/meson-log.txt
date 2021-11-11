@@ -1,4 +1,4 @@
-Build started at 2021-11-11T12:19:05.434760
+Build started at 2021-11-11T14:30:04.139582
 Main binary: /usr/bin/python3
 Build Options: -Dbackend=ninja
 Python system: Linux
@@ -23,12 +23,24 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Target machine cpu family: x86_64
 Target machine cpu: x86_64
-Build targets in project: 1
+Running compile:
+Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkr7gpgsi
+Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkr7gpgsi/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkr7gpgsi/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -lgtest -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library gtest found: YES
+Adding test "test"
+Build targets in project: 2
 
 Found ninja-1.8.2 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpmxsuabm4
-Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpmxsuabm4/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpmxsuabm4/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpu4g0g2_3
+Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpu4g0g2_3/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpu4g0g2_3/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
