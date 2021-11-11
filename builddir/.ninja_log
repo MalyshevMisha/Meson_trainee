@@ -1,0 +1,10 @@
+# ninja log v5
+2	193	1636548258	abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA2.cpp.o	e20676c25f41c67e
+0	193	1636548258	abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory1.cpp.o	751f2e68c4052818
+1	195	1636548258	abstract_factory/source/cb44ed8@@source@sta/ConcreteProductA1.cpp.o	c8f38a5c57a00e44
+3	212	1636548258	abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB2.cpp.o	993ea452a2274152
+1	234	1636548258	abstract_factory/source/cb44ed8@@source@sta/ConcreteFactory2.cpp.o	5800e8794216d69f
+3	239	1636548258	abstract_factory/source/cb44ed8@@source@sta/ConcreteProductB1.cpp.o	47856cdf115bb848
+239	243	1636548258	abstract_factory/source/libsource.a	1c5165fa7f789645
+4	261	1636548258	abstract_factory/d20d345@@example_task@exe/main.cpp.o	f4a9fa3cc3d2880e
+261	311	1636548258	abstract_factory/example_task	53bc4cf2ac4892b1
