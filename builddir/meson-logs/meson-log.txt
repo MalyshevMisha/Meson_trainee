@@ -1,4 +1,4 @@
-Build started at 2021-11-11T14:30:04.139582
+Build started at 2021-11-13T17:08:12.754004
 Main binary: /usr/bin/python3
 Build Options: -Dbackend=ninja
 Python system: Linux
@@ -23,9 +23,19 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Target machine cpu family: x86_64
 Target machine cpu: x86_64
+Pkg-config binary for MachineChoice.HOST is not cached.
+None of 'PKG_CONFIG' are defined in the environment, not changing global flags.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'gtest_main' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion gtest_main` -> 1
+
 Running compile:
-Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkr7gpgsi
-Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkr7gpgsi/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkr7gpgsi/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -lgtest -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkq1oz1bj
+Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkq1oz1bj/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpkq1oz1bj/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -lgtest -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -33,14 +43,24 @@ Compiler stdout:
  
 Compiler stderr:
  
-Library gtest found: YES
-Adding test "test"
-Build targets in project: 2
+Running compile:
+Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpxuozax2m
+Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpxuozax2m/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpxuozax2m/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -lgtest_main -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Run-time dependency GTest found: YES (prebuilt)
+Adding test "gtest test"
+Build targets in project: 1
 
 Found ninja-1.8.2 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpu4g0g2_3
-Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpu4g0g2_3/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpu4g0g2_3/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpbnwet2bd
+Command line:  c++ /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpbnwet2bd/testfile.cpp -o /home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/meson-private/tmpbnwet2bd/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  

@@ -36,43 +36,36 @@ build PHONY: phony
 
 # Build rules for targets
 
-build abstract_factory/d20d345@@my_test@exe/test_ConcreteProductA1Test.cpp.o: cpp_COMPILER ../abstract_factory/test/ConcreteProductA1Test.cpp
- DEPFILE = abstract_factory/d20d345@@my_test@exe/test_ConcreteProductA1Test.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@my_test@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+build abstract_factory/d20d345@@testprog@exe/test_ConcreteProductA1Test.cpp.o: cpp_COMPILER ../abstract_factory/test/ConcreteProductA1Test.cpp
+ DEPFILE = abstract_factory/d20d345@@testprog@exe/test_ConcreteProductA1Test.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@testprog@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -pthread
 
-build abstract_factory/my_test: cpp_LINKER abstract_factory/d20d345@@my_test@exe/test_ConcreteProductA1Test.cpp.o
- LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined -Wl,--start-group -lgtest -Wl,--end-group
+build abstract_factory/d20d345@@testprog@exe/source_ConcreteFactory1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory1.cpp
+ DEPFILE = abstract_factory/d20d345@@testprog@exe/source_ConcreteFactory1.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@testprog@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -pthread
 
-build abstract_factory/d20d345@@example_task@exe/main.cpp.o: cpp_COMPILER ../abstract_factory/main.cpp
- DEPFILE = abstract_factory/d20d345@@example_task@exe/main.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+build abstract_factory/d20d345@@testprog@exe/source_ConcreteFactory2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory2.cpp
+ DEPFILE = abstract_factory/d20d345@@testprog@exe/source_ConcreteFactory2.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@testprog@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -pthread
 
-build abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory1.cpp
- DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+build abstract_factory/d20d345@@testprog@exe/source_ConcreteProductA1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA1.cpp
+ DEPFILE = abstract_factory/d20d345@@testprog@exe/source_ConcreteProductA1.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@testprog@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -pthread
 
-build abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteFactory2.cpp
- DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+build abstract_factory/d20d345@@testprog@exe/source_ConcreteProductA2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA2.cpp
+ DEPFILE = abstract_factory/d20d345@@testprog@exe/source_ConcreteProductA2.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@testprog@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -pthread
 
-build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA1.cpp
- DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+build abstract_factory/d20d345@@testprog@exe/source_ConcreteProductB1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB1.cpp
+ DEPFILE = abstract_factory/d20d345@@testprog@exe/source_ConcreteProductB1.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@testprog@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -pthread
 
-build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductA2.cpp
- DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+build abstract_factory/d20d345@@testprog@exe/source_ConcreteProductB2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB2.cpp
+ DEPFILE = abstract_factory/d20d345@@testprog@exe/source_ConcreteProductB2.cpp.o.d
+ ARGS = -Iabstract_factory/d20d345@@testprog@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -pthread
 
-build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB1.cpp
- DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
-
-build abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o: cpp_COMPILER ../abstract_factory/source/ConcreteProductB2.cpp
- DEPFILE = abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o.d
- ARGS = -Iabstract_factory/d20d345@@example_task@exe -Iabstract_factory -I../abstract_factory -I../abstract_factory/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
-
-build abstract_factory/example_task: cpp_LINKER abstract_factory/d20d345@@example_task@exe/main.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory1.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteFactory2.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA1.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductA2.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB1.cpp.o abstract_factory/d20d345@@example_task@exe/source_ConcreteProductB2.cpp.o
- LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
+build abstract_factory/testprog: cpp_LINKER abstract_factory/d20d345@@testprog@exe/test_ConcreteProductA1Test.cpp.o abstract_factory/d20d345@@testprog@exe/source_ConcreteFactory1.cpp.o abstract_factory/d20d345@@testprog@exe/source_ConcreteFactory2.cpp.o abstract_factory/d20d345@@testprog@exe/source_ConcreteProductA1.cpp.o abstract_factory/d20d345@@testprog@exe/source_ConcreteProductA2.cpp.o abstract_factory/d20d345@@testprog@exe/source_ConcreteProductB1.cpp.o abstract_factory/d20d345@@testprog@exe/source_ConcreteProductB2.cpp.o | /usr/lib/libgtest.a /usr/lib/libgtest_main.a
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined -Wl,--start-group -lgtest -lgtest_main -Wl,--end-group -pthread
 
 # Test rules
 
@@ -126,7 +119,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony abstract_factory/my_test abstract_factory/example_task
+build all: phony abstract_factory/testprog
 
 build clean: phony meson-clean
 

@@ -1,1 +1,1 @@
-[{"cmd": ["/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/abstract_factory/my_test"], "env": {}, "name": "test", "workdir": null, "timeout": 30, "suite": ["abstract_factory"], "is_parallel": true, "priority": 0, "protocol": "exitcode"}]
+[{"cmd": ["/home/misha/work/tietoevry/trainee/meson's_task/1/proj/builddir/abstract_factory/testprog"], "env": {}, "name": "gtest test", "workdir": null, "timeout": 30, "suite": ["abstract_factory"], "is_parallel": true, "priority": 0, "protocol": "exitcode"}]
